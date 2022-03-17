@@ -2,7 +2,14 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 64px;
+  /*margin-top: 64px;*/
+  min-height: 100vh;
+  background: rgba( 0, 160, 253, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .dataContainer {
@@ -28,7 +35,38 @@
   cursor: pointer;
   margin-top: 16px;
   padding: 8px;
-  border: 0;
-  border-radius: 5px;
-  
+  /*border: 0;
+  border-radius: 5px;*/
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.waveMessage {
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px;
+  background: rgb( 33, 58, 90 );
+}
+
+
+.basic {
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,0.4);
+  position: relative;
+}
+.blur {
+  position: absolute;
+  bottom: 25px;
+  right: 162px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
 }
