@@ -17,7 +17,8 @@ const App = () => {
   /* デプロイされたコントラクトのアドレスを保持する変数を作成 */
   //const contractAddress = "0x64cC8de17e369fcaaDE36c423AA673B2b4419811";
   //const contractAddress = "0x2Be0940bb389f4d62e64991F1764d067bB610693";
-  const contractAddress = "0xdecE187FBF54Ae912F50EFE3DD479247369F9157";
+  //const contractAddress = "0xdecE187FBF54Ae912F50EFE3DD479247369F9157";
+  const contractAddress = "0x42BfC48e8A650BF6B4137BE8617FaDC3E53A63ef";
     /* コントラクトからすべてのwavesを取得するメソッドを作成 */
   /* ABIの内容を参照する変数を作成 */
   const contractABI = abi.abi;
