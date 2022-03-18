@@ -182,9 +182,11 @@ const App = () => {
         <div className="header">
         <span role="img" aria-label="hand-wave">👋</span> WELCOME!
         </div>
+        {/* 
         <div className="bio">
           イーサリアムウォレットを接続して、メッセージを作成したら、<span role="img" aria-label="hand-wave">👋</span>を送ってください<span role="img" aria-label="shine">✨</span>
         </div>
+        */}
         <br />
         {/* ウォレットコネクトのボタンを実装 */}
         {!currentAccount && (
@@ -203,6 +205,7 @@ const App = () => {
           Wave at Me
         </button>)
         }
+        <br />
         {/* メッセージボックスを実装*/}
         {currentAccount && (<textarea name="messageArea"
             placeholder="メッセージはこちら"
@@ -215,7 +218,7 @@ const App = () => {
         {currentAccount && (
         allWaves.slice(0).reverse().map((wave, index) => {
           return (
-            <div key={index} style={{ backgroundColor: "#F8F8FF", marginTop: "16px", padding: "8px" }}>
+            <div key={index} className="waveButton">
               <div>Address: {wave.address}</div>
               <div>Time: {wave.timestamp.toString()}</div>
               <div>Message: {wave.message}</div>
